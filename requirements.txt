@@ -1,4 +1,10 @@
 pandas
 pymongo
 numpy
+matplotlib
+seaborn
+statsmodels
+scikit-learn
+pyyaml
+logging
 -e .
