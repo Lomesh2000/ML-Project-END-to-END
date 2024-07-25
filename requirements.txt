@@ -6,5 +6,8 @@ seaborn
 statsmodels
 scikit-learn
 pyyaml
-logging
+scipy
+imblearn
+xgboost
+catboost
 -e .
