@@ -11,4 +11,5 @@ imblearn
 xgboost
 catboost
 certifi
+evidently
 -e .
