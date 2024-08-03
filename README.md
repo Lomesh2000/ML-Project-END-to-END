@@ -20,3 +20,9 @@ conda activate env_name
 ```bash
 pip install -r requirements.txt
 ```
+
+## WorkFlow
+1. Update Constants Folder under Project Folder.
+2. set entities in entity folder 
+3. work with components
+4. pipeline
