@@ -2,6 +2,7 @@
 ## dedicated solely to storing such values which are supposed to be unchanged
 
 import os
+from datetime import date
 
 DB_NAME='ML_END_to_END'
 COLLECTION_NAME='visa_data'
@@ -27,5 +28,16 @@ DATA_INGESTION_INGESTED_DIR: str = 'ingested'
 # train test split ratio 
 TRAIN_TEST_SPLIT_RATIO: float = 0.2
 
+# target feature
+TARGET_COLUMN = 'case_status'
+CURRENT_YEAR = date.today().year
+PREPROCESSIG_FILE_NAME = 'preprocessing.pkl'
 
+# validation
+DATA_VALIDATION_DIR_NAME = 'data_validation'
+DATA_DRIFT_DIR_NAME = 'drift_report'
+DATA_DRIFT_REPORT_NAME = 'drift_report.yaml'
+
+# schema file path
+SCHEMA_PATH = os.path.join('config', 'schema.yaml')
 
