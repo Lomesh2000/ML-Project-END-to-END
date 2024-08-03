@@ -1,9 +1,4 @@
-from project.logger import logging
-from project.exception import CustomException
-import sys
+from project.pipeline.training_pipeline import TrainingPipeline
 
-logging.info('Welcome')
-try:
-    a = 10/0
-except Exception as e:
-    raise CustomException(e, sys)    
+pipeline = TrainingPipeline()
+pipeline.run_pipeline()
