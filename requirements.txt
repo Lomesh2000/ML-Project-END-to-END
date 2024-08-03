@@ -10,4 +10,5 @@ scipy
 imblearn
 xgboost
 catboost
+certifi
 -e .
