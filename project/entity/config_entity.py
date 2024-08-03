@@ -22,3 +22,8 @@ class DataIngestionConfig:
     train_test_split_ratio = TRAIN_TEST_SPLIT_RATIO
     collection_name = COLLECTION_NAME
 
+@dataclass
+class DataValidationConfig:
+    data_vaidation_dir = os.path.join(training_pipeline_config.artifact_dir, DATA_VALIDATION_DIR_NAME)
+    drift_report_file_path = os.path.join(data_vaidation_dir, DATA_DRIFT_DIR_NAME, DATA_DRIFT_REPORT_NAME)
+    
