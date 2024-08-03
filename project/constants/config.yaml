@@ -1,0 +1,16 @@
+DB_NAME : ML_END_to_END
+COLLECTION_NAME : visa_data
+CONNECTION_URL : mongodb+srv://lomeshsoniwork:qJjqV3vzCEOYtOmv@phase1.8ijowa1.mongodb.net/
+
+PIPELINE_NAME : US_VISA
+ARTIFACTS_FOLDER : artifacts
+MODEL_FILE_NAME : model.pkl
+
+# folders t be created during data ingestion 
+DATA_INGESTION_COLLECTION_NAME : visa_data
+DATA_INGESTION_DIRECTORY_NAME : data_ingestion
+DATA_INGESTION_FEATURE_DIRECTORY : feature_store
+DATA_INGESTION_INGESTED_DIR : ingested
+
+# train test split ratio 
+TRAIN_TEST_SPLIT_RATIO : 0.2
