@@ -1,4 +1,4 @@
 from project.pipeline.training_pipeline import TrainingPipeline
 
-pipeline = TrainingPipeline()
-pipeline.run_pipeline()
+onj = TrainingPipeline()
+onj.run_pipeline()
