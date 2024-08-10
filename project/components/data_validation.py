@@ -129,7 +129,7 @@ class DataValidation:
                 logging.info(f'validation error: {validaton_error_messages}')
 
             data_vaildation_artifacts = DataValidationArtifacts(message='. '.join(validaton_error_messages),
-                                                                validation_status=drift_status,
+                                                                validation_status= not drift_status,
                                                                 drift_report_file_path=self.data_validation_config.drift_report_file_path)
 
             logging.info(f'data validation artifacts captured : {data_vaildation_artifacts}')

@@ -26,4 +26,21 @@ class DataIngestionConfig:
 class DataValidationConfig:
     data_vaidation_dir = os.path.join(training_pipeline_config.artifact_dir, DATA_VALIDATION_DIR_NAME)
     drift_report_file_path = os.path.join(data_vaidation_dir, DATA_DRIFT_DIR_NAME, DATA_DRIFT_REPORT_NAME)
-    
+
+@dataclass
+class DataTransformationConfig:    
+    data_transformation_dir = os.path.join(training_pipeline_config.artifact_dir, DATA_TRANSFORAMTION_DIR_NAME_DIR)
+    transformed_data_train_file_path = os.path.join(data_transformation_dir, DATA_TRASFORMATION_TRANSFORMED_DATA_DIR, TRAINING_FILE.replace('.csv', '.npy'))
+    transformed_data_test_file_path = os.path.join(data_transformation_dir, DATA_TRASFORMATION_TRANSFORMED_DATA_DIR, TEST_FILE.replace('.csv', '.npy') )
+    data_preprocessor_obj_file_path = os.path.join(data_transformation_dir, DATA_TRAINFORMATION_PREPROCESSOR_OBJECT_DIR,
+                                                   PREPROCESSIG_FILE_NAME)
+
+@dataclass
+class ModelTrainerConfig:
+    model_traning_dir = os.path.join(training_pipeline_config.artifact_dir, MODEL_TRAINING_DIR_NAME)
+    model_trained_model_file_path = os.path.join(model_traning_dir, MODEL_TRAINER_TRAINED_MODEL_DIR,
+                                                 MODEL_TRAINER_TRAINED_MODEL_NAME)
+    expected_accuracy = MODEL_TRAINER_EXPECTED_SCORE
+    model_config_file_path = MODEL_TRAINER_MODEL_CONFIG_FILE_PATH
+    all_model_performance_csv_file = os.path.join(model_traning_dir, MODEL_TRAINER_TRAINED_MODEL_DIR,
+                                                 ALL_MODEL_PERFORMACE_FILE_PATH)

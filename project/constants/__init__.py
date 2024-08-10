@@ -41,3 +41,17 @@ DATA_DRIFT_REPORT_NAME = 'drift_report.yaml'
 # schema file path
 SCHEMA_PATH = os.path.join('config', 'schema.yaml')
 
+# transformation 
+DATA_TRANSFORAMTION_DIR_NAME_DIR = 'transformed'
+DATA_TRASFORMATION_TRANSFORMED_DATA_DIR = 'transformed_data'
+DATA_TRAINFORMATION_PREPROCESSOR_OBJECT_DIR = 'preprocessor_obj'
+PREPROCESSING_OBJECT_FILE_NAME = 'preprocessor.pkl'
+
+# model training constants
+MODEL_TRAINING_DIR_NAME = 'model_trainer'
+MODEL_TRAINER_TRAINED_MODEL_DIR = 'trained_dir'
+MODEL_TRAINER_TRAINED_MODEL_NAME = 'model.pkl'
+MODEL_TRAINER_EXPECTED_SCORE = 0.8
+MODEL_TRAINER_MODEL_CONFIG_FILE_PATH  = os.path.join('config', 'model.yaml')
+ALL_MODEL_PERFORMACE_FILE_PATH = 'models_performancs.csv'                                                      
+

@@ -12,4 +12,5 @@ xgboost
 catboost
 certifi
 evidently
+dill
 -e .
